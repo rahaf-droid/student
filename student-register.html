@@ -68,7 +68,7 @@
   </div>
 
   <script>
-    const webhookURL = "https://script.google.com/macros/s/AKfycbyzCwlZ3xiaGQuUc6J_xSxgHZtIcJBrK472jiuTJaKMtIH6KYFCDsAwn7FO2B4uLvqf/exec";
+    const webhookURL = "https://script.google.com/macros/s/AKfycbwtb4yAkTdcO1SUIoiWZeRZy_kBKLrG2hM1mHDhCyJ2VA0BazoLWuDOLwofEcoCN-26/exec";
 
     document.getElementById("studentForm").addEventListener("submit", function(e) {
       e.preventDefault();
@@ -90,11 +90,11 @@
       })
       .then(res => res.json())
       .then(data => {
-        alert("تم التسجيل بنجاح! 🎉");
+        alert("registered successfully 🎉");
         document.getElementById("studentForm").reset();
       })
       .catch(err => {
-        alert("حدث خطأ: " + err.message);
+        alert("opps ERROR! " + err.message);
       });
     });
   </script>
